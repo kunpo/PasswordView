@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Ki-cM-Cxf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PasswordViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYY-YO-esW">
+                                <rect key="frame" x="54" y="139" width="266" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="C1K-5I-a6S"/>
+                                </constraints>
+                                <state key="normal" title="仿微信"/>
+                                <connections>
+                                    <action selector="wechat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a0a-fz-ft8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Veg-2p-pMg">
+                                <rect key="frame" x="54" y="204" width="266" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="r4F-bR-lFt"/>
+                                </constraints>
+                                <state key="normal" title="仿支付宝"/>
+                                <connections>
+                                    <action selector="ali:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qj6-Lk-DWk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zYY-YO-esW" secondAttribute="trailing" constant="55" id="4a2-12-jVS"/>
+                            <constraint firstItem="Veg-2p-pMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="6vp-rD-7o0"/>
+                            <constraint firstItem="zYY-YO-esW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="VBN-lB-C8A"/>
+                            <constraint firstItem="Veg-2p-pMg" firstAttribute="top" secondItem="zYY-YO-esW" secondAttribute="bottom" constant="35" id="X0M-jS-foQ"/>
+                            <constraint firstItem="zYY-YO-esW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="fgz-vA-ShV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Veg-2p-pMg" secondAttribute="trailing" constant="55" id="tY0-nw-wcy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ip5-Qn-rkC">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="WDj-7q-xxS">
+                            <connections>
+                                <segue destination="FAV-tu-RDy" kind="show" id="QB1-V0-ujA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="452" y="-33.733133433283363"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="hpG-kf-Z2j">
+            <objects>
+                <viewController id="FAV-tu-RDy" customClass="SecondVC" customModule="PasswordViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b3L-zM-HLR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nr4-4H-huk" customClass="PasswordView" customModule="PasswordViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="195" width="343" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="p0O-AD-Kbv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Z6-eK-NMK" firstAttribute="trailing" secondItem="Nr4-4H-huk" secondAttribute="trailing" constant="16" id="CBU-vg-19d"/>
+                            <constraint firstItem="Nr4-4H-huk" firstAttribute="leading" secondItem="9Z6-eK-NMK" secondAttribute="leading" constant="16" id="cqZ-ZW-5sx"/>
+                            <constraint firstItem="Nr4-4H-huk" firstAttribute="top" secondItem="9Z6-eK-NMK" secondAttribute="top" constant="131" id="o1E-pe-eny"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Z6-eK-NMK"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordView" destination="Nr4-4H-huk" id="KMr-Rq-fHP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tap-nv-0Ke" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="-42.728635682158924"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WQ9-mh-yTe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Ki-cM-Cxf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iui-Jf-b3P">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Nbs-36-5aF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lA5-wK-H9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-232" y="-32.383808095952027"/>
+        </scene>
+    </scenes>
+</document>

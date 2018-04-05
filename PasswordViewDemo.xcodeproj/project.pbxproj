@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB4A1DAA2075EEFE002CFB24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A1DA92075EEFE002CFB24 /* AppDelegate.swift */; };
+		DB4A1DAC2075EEFE002CFB24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A1DAB2075EEFE002CFB24 /* ViewController.swift */; };
+		DB4A1DAF2075EEFE002CFB24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4A1DAD2075EEFE002CFB24 /* Main.storyboard */; };
+		DB4A1DB12075EEFE002CFB24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4A1DB02075EEFE002CFB24 /* Assets.xcassets */; };
+		DB4A1DB42075EEFE002CFB24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4A1DB22075EEFE002CFB24 /* LaunchScreen.storyboard */; };
+		DB4A1DBF2075EEFE002CFB24 /* PasswordViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A1DBE2075EEFE002CFB24 /* PasswordViewDemoUITests.swift */; };
+		DB4A1DCC2075EF97002CFB24 /* PasswordAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A1DCA2075EF97002CFB24 /* PasswordAlert.swift */; };
+		DB4A1DCD2075EF97002CFB24 /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A1DCB2075EF97002CFB24 /* PasswordView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB4A1DBB2075EEFE002CFB24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB4A1D9E2075EEFE002CFB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB4A1DA52075EEFE002CFB24;
+			remoteInfo = PasswordViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB4A1DA62075EEFE002CFB24 /* PasswordViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB4A1DA92075EEFE002CFB24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB4A1DAB2075EEFE002CFB24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB4A1DAE2075EEFE002CFB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB4A1DB02075EEFE002CFB24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB4A1DB32075EEFE002CFB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB4A1DB52075EEFE002CFB24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB4A1DBA2075EEFE002CFB24 /* PasswordViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB4A1DBE2075EEFE002CFB24 /* PasswordViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewDemoUITests.swift; sourceTree = "<group>"; };
+		DB4A1DC02075EEFE002CFB24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB4A1DCA2075EF97002CFB24 /* PasswordAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordAlert.swift; sourceTree = "<group>"; };
+		DB4A1DCB2075EF97002CFB24 /* PasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB4A1DA32075EEFE002CFB24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB4A1DB72075EEFE002CFB24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB4A1D9D2075EEFE002CFB24 = {
+			isa = PBXGroup;
+			children = (
+				DB4A1DA82075EEFE002CFB24 /* PasswordViewDemo */,
+				DB4A1DBD2075EEFE002CFB24 /* PasswordViewDemoUITests */,
+				DB4A1DA72075EEFE002CFB24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB4A1DA72075EEFE002CFB24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB4A1DA62075EEFE002CFB24 /* PasswordViewDemo.app */,
+				DB4A1DBA2075EEFE002CFB24 /* PasswordViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB4A1DA82075EEFE002CFB24 /* PasswordViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DB4A1DC92075EF77002CFB24 /* KPOPasswordView */,
+				DB4A1DA92075EEFE002CFB24 /* AppDelegate.swift */,
+				DB4A1DAB2075EEFE002CFB24 /* ViewController.swift */,
+				DB4A1DAD2075EEFE002CFB24 /* Main.storyboard */,
+				DB4A1DB02075EEFE002CFB24 /* Assets.xcassets */,
+				DB4A1DB22075EEFE002CFB24 /* LaunchScreen.storyboard */,
+				DB4A1DB52075EEFE002CFB24 /* Info.plist */,
+			);
+			path = PasswordViewDemo;
+			sourceTree = "<group>";
+		};
+		DB4A1DBD2075EEFE002CFB24 /* PasswordViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB4A1DBE2075EEFE002CFB24 /* PasswordViewDemoUITests.swift */,
+				DB4A1DC02075EEFE002CFB24 /* Info.plist */,
+			);
+			path = PasswordViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		DB4A1DC92075EF77002CFB24 /* KPOPasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				DB4A1DCA2075EF97002CFB24 /* PasswordAlert.swift */,
+				DB4A1DCB2075EF97002CFB24 /* PasswordView.swift */,
+			);
+			path = KPOPasswordView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB4A1DA52075EEFE002CFB24 /* PasswordViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB4A1DC32075EEFE002CFB24 /* Build configuration list for PBXNativeTarget "PasswordViewDemo" */;
+			buildPhases = (
+				DB4A1DA22075EEFE002CFB24 /* Sources */,
+				DB4A1DA32075EEFE002CFB24 /* Frameworks */,
+				DB4A1DA42075EEFE002CFB24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordViewDemo;
+			productName = PasswordViewDemo;
+			productReference = DB4A1DA62075EEFE002CFB24 /* PasswordViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB4A1DB92075EEFE002CFB24 /* PasswordViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB4A1DC62075EEFE002CFB24 /* Build configuration list for PBXNativeTarget "PasswordViewDemoUITests" */;
+			buildPhases = (
+				DB4A1DB62075EEFE002CFB24 /* Sources */,
+				DB4A1DB72075EEFE002CFB24 /* Frameworks */,
+				DB4A1DB82075EEFE002CFB24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB4A1DBC2075EEFE002CFB24 /* PBXTargetDependency */,
+			);
+			name = PasswordViewDemoUITests;
+			productName = PasswordViewDemoUITests;
+			productReference = DB4A1DBA2075EEFE002CFB24 /* PasswordViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB4A1D9E2075EEFE002CFB24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = kunpo;
+				TargetAttributes = {
+					DB4A1DA52075EEFE002CFB24 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DB4A1DB92075EEFE002CFB24 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DB4A1DA52075EEFE002CFB24;
+					};
+				};
+			};
+			buildConfigurationList = DB4A1DA12075EEFE002CFB24 /* Build configuration list for PBXProject "PasswordViewDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB4A1D9D2075EEFE002CFB24;
+			productRefGroup = DB4A1DA72075EEFE002CFB24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB4A1DA52075EEFE002CFB24 /* PasswordViewDemo */,
+				DB4A1DB92075EEFE002CFB24 /* PasswordViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB4A1DA42075EEFE002CFB24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB4A1DB42075EEFE002CFB24 /* LaunchScreen.storyboard in Resources */,
+				DB4A1DB12075EEFE002CFB24 /* Assets.xcassets in Resources */,
+				DB4A1DAF2075EEFE002CFB24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB4A1DB82075EEFE002CFB24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB4A1DA22075EEFE002CFB24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB4A1DAC2075EEFE002CFB24 /* ViewController.swift in Sources */,
+				DB4A1DAA2075EEFE002CFB24 /* AppDelegate.swift in Sources */,
+				DB4A1DCC2075EF97002CFB24 /* PasswordAlert.swift in Sources */,
+				DB4A1DCD2075EF97002CFB24 /* PasswordView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB4A1DB62075EEFE002CFB24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB4A1DBF2075EEFE002CFB24 /* PasswordViewDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB4A1DBC2075EEFE002CFB24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB4A1DA52075EEFE002CFB24 /* PasswordViewDemo */;
+			targetProxy = DB4A1DBB2075EEFE002CFB24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB4A1DAD2075EEFE002CFB24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB4A1DAE2075EEFE002CFB24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB4A1DB22075EEFE002CFB24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB4A1DB32075EEFE002CFB24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB4A1DC12075EEFE002CFB24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB4A1DC22075EEFE002CFB24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB4A1DC42075EEFE002CFB24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2U6VF4949W;
+				INFOPLIST_FILE = PasswordViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kunpo.PasswordViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB4A1DC52075EEFE002CFB24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2U6VF4949W;
+				INFOPLIST_FILE = PasswordViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kunpo.PasswordViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB4A1DC72075EEFE002CFB24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2U6VF4949W;
+				INFOPLIST_FILE = PasswordViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kunpo.PasswordViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PasswordViewDemo;
+			};
+			name = Debug;
+		};
+		DB4A1DC82075EEFE002CFB24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2U6VF4949W;
+				INFOPLIST_FILE = PasswordViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kunpo.PasswordViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PasswordViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB4A1DA12075EEFE002CFB24 /* Build configuration list for PBXProject "PasswordViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB4A1DC12075EEFE002CFB24 /* Debug */,
+				DB4A1DC22075EEFE002CFB24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB4A1DC32075EEFE002CFB24 /* Build configuration list for PBXNativeTarget "PasswordViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB4A1DC42075EEFE002CFB24 /* Debug */,
+				DB4A1DC52075EEFE002CFB24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB4A1DC62075EEFE002CFB24 /* Build configuration list for PBXNativeTarget "PasswordViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB4A1DC72075EEFE002CFB24 /* Debug */,
+				DB4A1DC82075EEFE002CFB24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB4A1D9E2075EEFE002CFB24 /* Project object */;
+}
