@@ -185,7 +185,7 @@ public class PasswordActionSheet: UIView {
         NotificationCenter.default.removeObserver(self)
     }
     
-    convenience init(title: String?,cancelImage: String?, btnTitle: String?, delegate: PasswordActionSheetDelegate?) {
+    public convenience init(title: String?,cancelImage: String?, btnTitle: String?, delegate: PasswordActionSheetDelegate?) {
         let frame = UIScreen.main.bounds
         self.init(frame: frame)
         self.delegate = delegate
