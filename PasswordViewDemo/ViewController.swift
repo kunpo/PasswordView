@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func ali(_ sender: Any) {
-        PasswordActionSheet(title: "标题", cancelImage: nil, btnTitle: "这里可以是忘记密码的", delegate: self).show()
+        PasswordActionSheet(title: "标题", cancelImage: nil, btnTitle: "忘记密码?", delegate: self).show()
     }
     
     
