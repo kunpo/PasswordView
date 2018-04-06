@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
-protocol PasswordAlertDelegate: class {
+public protocol PasswordAlertDelegate: class {
     //完成输入密码
     func accomplised(passwordAlert view: PasswordAlert, password: String)
     //密码未输入完，关闭了键盘
     func stop(passwordAlert view: PasswordAlert) -> Bool
 }
 
-class PasswordAlert: UIView {
+public class PasswordAlert: UIView {
     
     weak var delegate: PasswordAlertDelegate?
     
@@ -32,7 +32,7 @@ class PasswordAlert: UIView {
     var passwordView: PasswordView?
     var background: UIView!
     
-    convenience init(title: String?, detail: String?, explain:String?, delegate: PasswordAlertDelegate? ) {
+    public convenience init(title: String?, detail: String?, explain:String?, delegate: PasswordAlertDelegate? ) {
          self.init(frame: UIScreen.main.bounds)
         background = UIView(frame: .zero)
         var viewH: CGFloat = 0
@@ -111,7 +111,7 @@ class PasswordAlert: UIView {
         super.init(frame: frame)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -129,7 +129,7 @@ extension PasswordAlert: PasswordViewDelegate {
         self.removeSelf()
     }
     
-    func stop(passwordView: PasswordView) -> Bool {
+    func close(passwordView: PasswordView) -> Bool {
         
         let canStop = delegate?.stop(passwordAlert: self)
         if (canStop == true) || (canStop == nil) {
@@ -145,17 +145,17 @@ extension PasswordAlert: PasswordViewDelegate {
 }
 
 
-protocol PasswordActionSheetDelegate: class {
+public protocol PasswordActionSheetDelegate: class {
     //密码输入完成
     func accomplised(actionSheet view: PasswordActionSheet, password: String)
     //未输入完，关闭了键盘
-    func stop(actionSheet view: PasswordActionSheet) -> Bool
+    func close(actionSheet view: PasswordActionSheet) -> Bool
     //点击了忘记密码btn时
     func forget(actionSheet sheet: PasswordActionSheet)
     
 }
 
-class PasswordActionSheet: UIView {
+public class PasswordActionSheet: UIView {
     
     let alertW: CGFloat = UIScreen.main.bounds.width
     
@@ -177,7 +177,7 @@ class PasswordActionSheet: UIView {
         super.init(frame: frame)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -283,17 +283,17 @@ extension PasswordActionSheet: PasswordViewDelegate {
         self.removeSelf()
     }
     
-    func stop(passwordView: PasswordView) -> Bool {
+    func close(passwordView: PasswordView) -> Bool {
         
-        let canStop = delegate?.stop(actionSheet: self)
-        if (canStop == true) || (canStop == nil) {
+        let canClose = delegate?.close(actionSheet: self)
+        if (canClose == true) || (canClose == nil) {
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
                 self.removeSelf()
             })
         }
         
-        return canStop != nil ? canStop! : true
+        return canClose != nil ? canClose! : true
     }
     
 }

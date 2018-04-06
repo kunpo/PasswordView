@@ -13,14 +13,14 @@ protocol PasswordViewDelegate: class {
     //完成输入密码
     func accomplished(passwordView: PasswordView, password: String)
     //密码未输完时关闭键盘
-    func stop(passwordView: PasswordView) -> Bool
+    func close(passwordView: PasswordView) -> Bool
 }
 
 enum SecretType {
     case asterisk, point
 }
 
-class PasswordView: UIView {
+public class PasswordView: UIView {
     
     var count = 6
     let textField = UITextField(frame: .zero)
@@ -38,11 +38,11 @@ class PasswordView: UIView {
         super.init(frame: frame)
     }
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         
         if initalized == false {
@@ -65,7 +65,7 @@ class PasswordView: UIView {
         self.backgroundColor = UIColor.clear
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -116,7 +116,7 @@ class PasswordView: UIView {
         textField.text = nil
     }
     
-    override func becomeFirstResponder() -> Bool {
+    public override func becomeFirstResponder() -> Bool {
         textField.text = nil
         return textField.becomeFirstResponder()
     }
@@ -174,12 +174,12 @@ class PasswordView: UIView {
 
 extension PasswordView: UITextFieldDelegate {
     
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+    public func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         if let count = textField.text?.count, count == 6 {
             return true
         }
         if let delegate = self.delegate {
-            return delegate.stop(passwordView: self)
+            return delegate.close(passwordView: self)
         }
         return true
     }

@@ -46,11 +46,12 @@ extension ViewController: PasswordActionSheetDelegate {
         print("输入的密码是" + password)
     }
     
-    func stop(actionSheet view: PasswordActionSheet) -> Bool {
+    func close(actionSheet view: PasswordActionSheet) -> Bool {
         return true
     }
     
     func forget(actionSheet sheet: PasswordActionSheet) {
+        sheet.dismiss()
         print("忘记密码了，😂，你自己看着办吧")
     }
     
@@ -80,7 +81,7 @@ extension SecondVC: PasswordViewDelegate {
         print("输入的密码是" + password)
     }
     
-    func stop(passwordView: PasswordView) -> Bool {
+    func close(passwordView: PasswordView) -> Bool {
         
         print("没输完密码就关闭了键盘")
         return true
