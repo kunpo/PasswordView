@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   s.author             = { "kunpo" => "594966623@qq.com" }
