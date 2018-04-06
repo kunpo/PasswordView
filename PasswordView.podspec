@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "PasswordView"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "仿微信支付宝密码输入"
 
 
