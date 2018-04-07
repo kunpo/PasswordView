@@ -34,11 +34,9 @@ extension ViewController: PasswordAlertDelegate {
         print("输入的密码是" + password)
     }
     
-    func stop(passwordAlert view: PasswordAlert) -> Bool {
+    func close(passwordAlert view: PasswordAlert) -> Bool {
         return true
-    }
-    
-    
+    } 
 }
 
 extension ViewController: PasswordActionSheetDelegate {
@@ -54,8 +52,6 @@ extension ViewController: PasswordActionSheetDelegate {
         sheet.dismiss()
         print("忘记密码了，😂，你自己看着办吧")
     }
-    
-    
 }
 
 class SecondVC: UIViewController {

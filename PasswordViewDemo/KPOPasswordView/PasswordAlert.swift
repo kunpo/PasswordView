@@ -13,7 +13,7 @@ public protocol PasswordAlertDelegate: class {
     //完成输入密码
     func accomplised(passwordAlert view: PasswordAlert, password: String)
     //密码未输入完，关闭了键盘
-    func stop(passwordAlert view: PasswordAlert) -> Bool
+    func close(passwordAlert view: PasswordAlert) -> Bool
 }
 
 public class PasswordAlert: UIView {
@@ -46,7 +46,7 @@ public class PasswordAlert: UIView {
         
         let btn = UIButton(type: .custom)
         btn.frame = CGRect(origin: CGPoint(x: segmentationH, y: segmentationH), size: CGSize(width: titleH, height: titleH))
-        btn.addTarget(self, action: #selector(stopPassword), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(closePassword), for: .touchUpInside)
         btn.setTitle("X", for: .normal)
         btn.setTitleColor(UIColor.lightGray, for: .normal)
         background.addSubview(btn)
@@ -85,7 +85,7 @@ public class PasswordAlert: UIView {
         backgroundColor = UIColor(red: 102.0 / 255.0, green: 102.0 / 255.0, blue: 102.0 / 255.0, alpha: 0.4)
     }
     
-    @objc fileprivate func stopPassword() {
+    @objc fileprivate func closePassword() {
         removeSelf()
     }
     
@@ -131,8 +131,8 @@ extension PasswordAlert: PasswordViewDelegate {
     
     func close(passwordView: PasswordView) -> Bool {
         
-        let canStop = delegate?.stop(passwordAlert: self)
-        if (canStop == true) || (canStop == nil) {
+        let canClose = delegate?.close(passwordAlert: self)
+        if (canClose == true) || (canClose == nil) {
            
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
                 self.removeSelf()
@@ -140,7 +140,7 @@ extension PasswordAlert: PasswordViewDelegate {
             
         }
         
-        return canStop != nil ? canStop! : true
+        return canClose != nil ? canClose! : true
     }
 }
 
@@ -202,7 +202,7 @@ public class PasswordActionSheet: UIView {
         
         let cancel = UIButton(type: .custom)
         cancel.frame = CGRect(origin: CGPoint(x: segmentationH, y: segmentationH), size: CGSize(width: titleH, height: titleH))
-        cancel.addTarget(self, action: #selector(stopPassword), for: .touchUpInside)
+        cancel.addTarget(self, action: #selector(closePassword), for: .touchUpInside)
         
         if let imageName = cancelImage, let cancelImage = UIImage(named: imageName) {
             cancel.setImage(cancelImage, for: .normal)
@@ -266,7 +266,7 @@ public class PasswordActionSheet: UIView {
         self.removeFromSuperview()
     }
     
-    @objc fileprivate func stopPassword() {
+    @objc fileprivate func closePassword() {
         removeSelf()
     }
     
