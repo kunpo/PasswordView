@@ -235,7 +235,6 @@ public class PasswordActionSheet: UIView {
         }
         viewH += (3 * segmentationH)
         background.backgroundColor = UIColor.white
-        background.frame.size = CGSize(width: alertW, height: viewH)
         backgroundColor = UIColor(red: 102.0 / 255.0, green: 102.0 / 255.0, blue: 102.0 / 255.0, alpha: 0.4)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(note:)), name:Notification.Name.UIKeyboardWillShow , object: nil)
     }
@@ -243,14 +242,7 @@ public class PasswordActionSheet: UIView {
     public func show() {
         if let keyWindow = UIApplication.shared.keyWindow {
             keyWindow.addSubview(self)
-            UIView.animate(withDuration: 0.2, animations: {
-                let y = UIScreen.main.bounds.size.height - self.background.bounds.size.height
-                self.background.frame.origin.y = y
-            }) { (complete) in
-                if complete == true {
-                    let _ = self.passwordView?.becomeFirstResponder()
-                }
-            }
+            let _ = passwordView?.becomeFirstResponder()
         }
     }
     
