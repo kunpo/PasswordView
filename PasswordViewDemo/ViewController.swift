@@ -26,6 +26,9 @@ class ViewController: UIViewController {
         PasswordActionSheet(title: "标题", cancelImage: nil, btnTitle: "忘记密码?", delegate: self).show()
     }
     
+    @IBAction func sheet1(_ sender: Any) {
+        PasswordActionSheetStyle1(title: "请输入密码", cancelImage: nil, btnTitle: "忘记密码", delegate: self).show()
+    }
     
 }
 
@@ -40,15 +43,15 @@ extension ViewController: PasswordAlertDelegate {
 }
 
 extension ViewController: PasswordActionSheetDelegate {
-    func accomplised(actionSheet view: PasswordActionSheet, password: String) {
+    func accomplised(actionSheet view: PasswordActionSheetDismissProtocol, password: String) {
         print("输入的密码是" + password)
     }
     
-    func close(actionSheet view: PasswordActionSheet) -> Bool {
+    func close(actionSheet view: PasswordActionSheetDismissProtocol) -> Bool {
         return true
     }
     
-    func forget(actionSheet sheet: PasswordActionSheet) {
+    func forget(actionSheet sheet: PasswordActionSheetDismissProtocol) {
         sheet.dismiss()
         print("忘记密码了，😂，你自己看着办吧")
     }

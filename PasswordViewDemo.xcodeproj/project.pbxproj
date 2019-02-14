@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB39E8D122142BE9004B2C00 /* PasswordActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB39E8D022142BE9004B2C00 /* PasswordActionSheet.swift */; };
 		DB4A1DAA2075EEFE002CFB24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A1DA92075EEFE002CFB24 /* AppDelegate.swift */; };
 		DB4A1DAC2075EEFE002CFB24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A1DAB2075EEFE002CFB24 /* ViewController.swift */; };
 		DB4A1DAF2075EEFE002CFB24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4A1DAD2075EEFE002CFB24 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB39E8D022142BE9004B2C00 /* PasswordActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordActionSheet.swift; sourceTree = "<group>"; };
 		DB4A1DA62075EEFE002CFB24 /* PasswordViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4A1DA92075EEFE002CFB24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB4A1DAB2075EEFE002CFB24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				DB4A1DCA2075EF97002CFB24 /* PasswordAlert.swift */,
+				DB39E8D022142BE9004B2C00 /* PasswordActionSheet.swift */,
 				DB4A1DCB2075EF97002CFB24 /* PasswordView.swift */,
 			);
 			path = KPOPasswordView;
@@ -215,6 +218,7 @@
 			files = (
 				DB4A1DAC2075EEFE002CFB24 /* ViewController.swift in Sources */,
 				DB4A1DAA2075EEFE002CFB24 /* AppDelegate.swift in Sources */,
+				DB39E8D122142BE9004B2C00 /* PasswordActionSheet.swift in Sources */,
 				DB4A1DCC2075EF97002CFB24 /* PasswordAlert.swift in Sources */,
 				DB4A1DCD2075EF97002CFB24 /* PasswordView.swift in Sources */,
 			);
@@ -376,7 +380,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kunpo.PasswordViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -392,7 +396,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kunpo.PasswordViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
