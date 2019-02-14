@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "PasswordView"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "仿微信支付宝密码输入"
 
 
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
-  s.author             = { "kunpo" => "594966623@qq.com" }
+  s.author             = { "kunpo" => "2381970482@qq.com" }
   
   
 
