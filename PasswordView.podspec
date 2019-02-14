@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
 
 
 
-  s.source_files  = "PasswordViewDemo/KPOPasswordView/PasswordAlert.swift", "PasswordViewDemo/KPOPasswordView/PasswordView.swift"
+  s.source_files  = "PasswordViewDemo/KPOPasswordView/*.swift"
   # s.exclude_files = "Classes/Exclude"
 
 
